@@ -1,5 +1,5 @@
 ---
-jupyter:
+STACUP-2023:
   colab:
     toc_visible: true
   kernelspec:
@@ -7,8 +7,8 @@ jupyter:
     name: python3
   language_info:
     name: python
-  nbformat: 4
-  nbformat_minor: 0
+  Location: BDU, Trichy
+  Date: OCTOBER 16TH, 2023
 ---
 
 <div class="cell markdown" id="9EBkkpoXIxQl">
