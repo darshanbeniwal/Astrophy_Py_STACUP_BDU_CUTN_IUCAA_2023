@@ -1229,7 +1229,7 @@ plt.plot(t,fun,color='red',linestyle='dotted',linewidth='5')  #dashed
 
 ```
 
-##MultiPlot in a single plot
+## MultiPlot in a single plot
 
 
 ```python
