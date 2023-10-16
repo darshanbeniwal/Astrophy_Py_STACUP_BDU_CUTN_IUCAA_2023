@@ -87,7 +87,7 @@ import matplotlib.pyplot as plt #Now the Pyplot package can be referred to as pl
 import numpy as np
 ```
 
-##Errorbar Plots
+## Errorbar Plots
 
 
 ```python
@@ -99,7 +99,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 ```
 
-##Save Plot
+## Save Plot
 
 
 ```python
@@ -111,7 +111,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 ```
 
-##Confidence levels regions
+## Confidence levels regions
 
 
 ```python
@@ -250,7 +250,7 @@ plt.hist(random_numbers, bins=20,  color='blue', edgecolor='black')
 
 ```
 
-##Gaussian Random Number
+## Gaussian Random Number
 
 
 ```python
