@@ -50,6 +50,7 @@ np.savetxt('store_file.txt',np.transpose([a_arr,b_arr,chi_sq_arr]),fmt='%10.5f',
 
 # Load text file using Pandas
 ```python
+df = pd.read_csv ('store_file.txt',sep="\s+",names=["a","b","chi2"])
 
 ```
 
