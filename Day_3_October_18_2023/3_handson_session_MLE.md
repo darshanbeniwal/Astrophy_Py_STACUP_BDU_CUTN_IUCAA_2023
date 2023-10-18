@@ -44,6 +44,7 @@ for a in np.arange(0,1,0.001):
 
 # Save Arrays in a Text file
 ```python
+np.savetxt('store_file.txt',np.transpose([a_arr,b_arr,chi_sq_arr]),fmt='%10.5f',newline='\n',delimiter=' ')
 
 ```
 
