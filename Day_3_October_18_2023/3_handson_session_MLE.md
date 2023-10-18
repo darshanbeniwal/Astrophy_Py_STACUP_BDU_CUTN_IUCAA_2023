@@ -57,7 +57,8 @@ df = pd.read_csv ('store_file.txt',sep="\s+",names=["a","b","chi2"])
 # Find minimim   𝜒2   value
 
 ```python
-
+df_min=df.loc[df['chi2'].idxmin()]
+df_min
 ```
 
 # Estimate Confidence Intervals
