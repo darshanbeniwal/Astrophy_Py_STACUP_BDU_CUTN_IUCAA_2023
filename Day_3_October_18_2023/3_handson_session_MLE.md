@@ -124,13 +124,12 @@ plt.plot(df_2_sig['a'], df_2_sig['b'],'r.',label='$95.47\%$ confidence level con
 plt.plot(df_3_sig['a'], df_3_sig['b'],'g.',label='$99.70\%$ confidence level contour')
 plt.legend(loc="upper right")
 plt.annotate("$\chi^2_{\mathrm{min}}$", xy=(df_min[0],df_min[1]), xytext=(0.35, 1.783), arrowprops=dict(arrowstyle="->"))
-plt.tight_layout()
 ```
 
 # Save Final Output
 
 ```python
-
+plt.savefig('Linear_model_fit_mock_data_Basic.pdf', format='pdf', dpi=1200)
 ```
 
 
