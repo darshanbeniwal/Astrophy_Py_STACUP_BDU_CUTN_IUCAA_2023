@@ -76,7 +76,8 @@ plt.show()
 ## 68.27%  confidence level
 
 ```python
-
+df_1_sig = df[(round(df['chi2'], 3) >= round(df_min[2], 3) + 2.2) & (round(df['chi2'], 3) <= round(df_min[2], 3) + 2.4)]
+df_1_sig
 ```
 
 ## Plot  68.27%  Confidence Level
