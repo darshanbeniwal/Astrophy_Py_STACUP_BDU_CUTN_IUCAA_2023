@@ -83,7 +83,7 @@ df_1_sig
 ## Plot  68.27%  Confidence Level
 
 ```python
-
+plt.plot(df_1_sig['a'],df_1_sig['b'],'b.')
 ```
 
 ## 95.45%  confidence level
