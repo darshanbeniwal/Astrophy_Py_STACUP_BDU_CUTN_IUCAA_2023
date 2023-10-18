@@ -26,6 +26,19 @@ plt.show()
 # Perform Chi-square analysis
 
 ```python
+a_arr=[]
+b_arr=[]
+chi_sq_arr=[]
+for a in np.arange(0,1,0.001):
+    for b in np.arange(0.0,3,0.005):
+      chi_sq=0
+      for i in range(0,len(x_mock)):
+          y_th=a+b*x_mock[i]
+          chi_sq1=((y_mock[i]-y_th)/err_y_mock[i])**2
+          chi_sq=chi_sq+chi_sq1
+      a_arr.append(a)
+      b_arr.append(b)
+      chi_sq_arr.append(chi_sq)
 
 ```
 
