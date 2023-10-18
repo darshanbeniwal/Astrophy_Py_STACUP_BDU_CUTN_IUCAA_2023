@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 # Load Mock dataset
 
 ```python
-
+x_mock=np.array((1.0,2.0,3.0,4.0,5.0))
+y_mock=np.array((2.3,4.1,6.2,8.1,10.0))
+err_y_mock=np.array((0.08, 0.12, 0.2 , 0.16, 0.28))
 ```
 
 # Plot datapoint
