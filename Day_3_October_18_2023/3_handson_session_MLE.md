@@ -117,7 +117,14 @@ plt.plot(df_3_sig['a'],df_3_sig['b'],'g.')
 # Final Output
 
 ```python
-
+plt.xlabel('a')
+plt.ylabel("b")
+plt.plot(df_1_sig['a'], df_1_sig['b'],'b.',label='$68.27\%$ confidence level contour')
+plt.plot(df_2_sig['a'], df_2_sig['b'],'r.',label='$95.47\%$ confidence level contour')
+plt.plot(df_3_sig['a'], df_3_sig['b'],'g.',label='$99.70\%$ confidence level contour')
+plt.legend(loc="upper right")
+plt.annotate("$\chi^2_{\mathrm{min}}$", xy=(df_min[0],df_min[1]), xytext=(0.35, 1.783), arrowprops=dict(arrowstyle="->"))
+plt.tight_layout()
 ```
 
 # Save Final Output
