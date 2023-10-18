@@ -60,7 +60,18 @@ df = pd.read_csv ('store_file.txt',sep="\s+",names=["a","b","chi2"])
 df_min=df.loc[df['chi2'].idxmin()]
 df_min
 ```
+```python
+a_best=0.344
+b_best=1.930
+x_th=np.arange(0,5,0.01)
+y_th=a_best+b_best*x_th
 
+plt.errorbar(x_mock,y_mock,err_y_mock,fmt='b.')
+plt.plot(x_th,y_th,'r')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+```
 # Estimate Confidence Intervals
 ## 68.27%  confidence level
 
