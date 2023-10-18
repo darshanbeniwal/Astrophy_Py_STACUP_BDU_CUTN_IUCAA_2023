@@ -17,7 +17,10 @@ err_y_mock=np.array((0.08, 0.12, 0.2 , 0.16, 0.28))
 # Plot datapoint
 
 ```python
-
+plt.errorbar(x_mock,y_mock,err_y_mock,fmt='b.')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
 ```
 
 # Perform Chi-square analysis
