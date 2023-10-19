@@ -45,7 +45,18 @@ def posterior(theta, x, y, yerr):
 # 7. Define Metropolis-Hastings Algorithm Function
 
 ```python
-
+def Metropolis_Hastings(parameter_init, nsteps):
+    result = []  # List to store the sampled parameter values
+    result.append(parameter_init)  # Add the initial parameter values to the result list
+    for t in range(nsteps):  # Iterate over the specified number of steps
+        step_var = [0.5, 0.5]  # Variance of the proposal distribution for each parameter
+        proposal = norm.rvs(loc=result[-1], scale=step_var)  # Generate a proposal parameter value from a normal distribution
+        probability = np.exp(posterior(proposal,x,y,yerr) - posterior(result[-1],x,y,yerr))  # Calculate the acceptance probability
+        if (uniform.rvs() < probability):  # Accept the proposal with the acceptance probability
+            result.append(proposal)  # Add the proposal to the result list
+        else:
+            result.append(result[-1])  # Reject the proposal and add the previous parameter value to the result list
+    return(result)  # Return the sampled parameter values
 ```
 # 8. Define Initial Seeds, Number of Steps
 
