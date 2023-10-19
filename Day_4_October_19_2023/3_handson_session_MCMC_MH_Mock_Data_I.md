@@ -19,7 +19,10 @@ x,y,yerr=np.loadtxt("https://raw.githubusercontent.com/darshanbeniwal/Astrophy_P
 # 4. Define Likelihood Function
 
 ```python
-
+def likelihood(theta, x, y, yerr):
+    a, b= theta
+    model = a+b*x
+    return (np.sum(-0.5*((y-model)/yerr)**2-0.5*np.log(2*np.pi*yerr**2)))
 ```
 # 5. Define Prior Function
 
