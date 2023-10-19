@@ -162,5 +162,8 @@ plt.ylabel('Count')
 # 15. Plot Contour
 
 ```python
-
+fig = corner.corner(samples_MH,bins=50,color="b",labels=['a','b'],truths=[a_best,b_best],fill_contours=True,
+                    levels=(0.68,0.95,0.99,),
+                    smooth=True,
+                    quantiles=[0.16, 0.5, 0.84],title_fmt='.3f',plot_datapoints=False,show_titles=True)
 ```
