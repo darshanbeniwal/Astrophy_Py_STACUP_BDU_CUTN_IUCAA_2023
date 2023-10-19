@@ -36,7 +36,11 @@ def prior(theta):
 # 6. Define Posterior Function
 
 ```python
-
+def posterior(theta, x, y, yerr):
+    lp = prior(theta)
+    if not np.isfinite(lp):
+        return -np.inf
+    return (lp + likelihood(theta, x, y, yerr))
 ```
 # 7. Define Metropolis-Hastings Algorithm Function
 
