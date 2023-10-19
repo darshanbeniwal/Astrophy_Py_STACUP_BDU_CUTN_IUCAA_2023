@@ -27,7 +27,11 @@ def likelihood(theta, x, y, yerr):
 # 5. Define Prior Function
 
 ```python
-
+def prior(theta):
+    a, b= theta
+    if 0.0< a < 4 and 2.0 < b < 5.0:
+        return np.log10(1.0 / ((4 - 0.0) * (5.0 - 2.0)))
+    return -np.inf
 ```
 # 6. Define Posterior Function
 
