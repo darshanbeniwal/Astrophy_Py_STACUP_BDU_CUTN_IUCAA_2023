@@ -145,7 +145,19 @@ print("b:",b_best, "Sig_b:", sig_b)
 # 14. Show Parameter Histograms
 
 ```python
+plt.figure(figsize=(8, 3)) #Plot Size
 
+# Plot the histogram of a
+plt.subplot(1, 2, 1)
+plt.hist(a_chain, bins=100, color='blue')
+plt.xlabel('a')
+plt.ylabel('Count')
+
+# Plot the histogram of b
+plt.subplot(1, 2, 2)
+plt.hist(b_chain, bins=100, color='blue')
+plt.xlabel('b')
+plt.ylabel('Count')
 ```
 # 15. Plot Contour
 
