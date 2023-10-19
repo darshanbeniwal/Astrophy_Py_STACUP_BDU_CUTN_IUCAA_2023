@@ -89,7 +89,25 @@ axes[1].set_ylabel("$b$")
 # 11. Remove Burn-in Phase
 
 ```python
+fig, axes = plt.subplots(2, 1, figsize=(8, 8))
+samples = samples_MH.T
 
+# Plot the traceplot of H0
+axes[0].plot(samples[0], "g")
+axes[0].set_ylabel("$a$")
+axes[0].set_xlim(0,1000)
+
+# Plot the traceplot of Om
+axes[1].plot(samples[1], "r")
+axes[1].set_ylabel("$b$")
+axes[1].set_xlim(0,1000)
+
+```
+
+```python
+nburn_in=2000
+result_b = result[nburn_in:]
+samples_MH_b=np.array(result_b)
 ```
 # 12. Replot the Chains
 
