@@ -14,7 +14,7 @@ import corner
 # 3. Load Mock data from GitHub
 
 ```python
-
+x,y,yerr=np.loadtxt("https://raw.githubusercontent.com/darshanbeniwal/Astrophy_Py_STACUP_BDU_CUTN_IUCAA_2023/main/Text_files_Datasets/mock_data_1.txt",unpack=True)
 ```
 # 4. Define Likelihood Function
 
