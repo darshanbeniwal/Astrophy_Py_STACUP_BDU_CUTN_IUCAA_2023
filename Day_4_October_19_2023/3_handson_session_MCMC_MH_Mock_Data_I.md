@@ -127,7 +127,20 @@ axes[1].set_ylabel("$b$")
 # 13. Find Best Fit value of parameters
 
 ```python
+a_chain=samples_MH_b[:,0]
+b_chain=samples_MH_b[:,1]
+#Estimate the mean of a and b chains
+a_best = np.mean(a_chain)
+b_best = np.mean(b_chain)
 
+#Estimate the Std. Deviation of a and b chains
+
+sig_a = np.std(a_chain)
+sig_b = np.std(b_chain)
+
+print("Best fit values:")
+print("a:",a_best, "Sig_a:", sig_a)
+print("b:",b_best, "Sig_b:", sig_b)
 ```
 # 14. Show Parameter Histograms
 
