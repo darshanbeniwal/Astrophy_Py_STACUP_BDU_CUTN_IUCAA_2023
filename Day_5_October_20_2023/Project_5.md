@@ -1,0 +1,16 @@
+# Prior Range
+```python
+50.0< h0 < 80 and -2 < q < 2
+```
+# Initial Seed
+```python
+h0_ini,q_ini=60,-0.4
+```
+# Number of Steps
+```python
+nsteps=100000
+```
+# Step Variance
+```python
+step_var = [1, 0.1]
+```
