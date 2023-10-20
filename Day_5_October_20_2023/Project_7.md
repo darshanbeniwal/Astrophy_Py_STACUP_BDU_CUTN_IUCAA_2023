@@ -12,6 +12,6 @@ nsteps=100000
 ```
 # Step Variance
 ```python
-step_var = [1, 0.1, 0.1]
+step_var = [1, 0.05, 0.1]
 ```
 # ⚠️ Your code may take around 8-10 minutes!
