@@ -2,7 +2,7 @@
 ### Organized by CUTN & Bharathidasan University, Tiruchirappalli, [BDU](https://www.bdu.ac.in/), Tiruchirappalli    
 ### Funded by Inter-University Centre for Astronomy and Astrophysics ([IUCAA](https://www.iucaa.in/en/))
 
-I was among the invited speakers, along with [Prof. H. S. Mani](https://www.cmi.ac.in/people/fac-profile.php?id=hsmani), [Prof. T. R. Seshadri](http://people.du.ac.in/~trs/), [Prof. V Madhurima](https://cutn.irins.org/profile/48225), and [Dr. Sampurn Anand](https://cutn.irins.org/profile/252479) and in this repository, I have included all the files, including the data file and Python notebook, that were covered in two lecture sessions and four hands-on sessions by me.
+I was among the invited speakers, along with [Prof. H. S. Mani](https://www.cmi.ac.in/people/fac-profile.php?id=hsmani), [Prof. T. R. Seshadri](http://people.du.ac.in/~trs/), [Prof. V Madhurima](https://cutn.irins.org/profile/48225), and [Dr. Sampurn Anand](https://cutn.irins.org/profile/252479) and in this repository, I have included all the files, including the data file and Python notebook, that were covered in four lecture sessions and five hands-on sessions by me.
 
 ## Day-1. October 16th 2023; [🔗](https://github.com/darshanbeniwal/Astrophy_Py_STACUP_BDU_CUTN_IUCAA_2023/tree/main/Day_1_October_16_2023)
 
